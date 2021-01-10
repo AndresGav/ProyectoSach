@@ -51,9 +51,10 @@ namespace ProyectoGestionSach
             this.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(48, 105);
+            this.Label2.Location = new System.Drawing.Point(64, 129);
+            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(98, 30);
+            this.Label2.Size = new System.Drawing.Size(120, 37);
             this.Label2.TabIndex = 59;
             this.Label2.Text = "Buscar:";
             // 
@@ -94,15 +95,15 @@ namespace ProyectoGestionSach
             this.dgv_Habitaciones.GridColor = System.Drawing.Color.Black;
             this.dgv_Habitaciones.HeaderBgColor = System.Drawing.Color.DarkGray;
             this.dgv_Habitaciones.HeaderForeColor = System.Drawing.Color.Black;
-            this.dgv_Habitaciones.Location = new System.Drawing.Point(53, 179);
-            this.dgv_Habitaciones.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_Habitaciones.Location = new System.Drawing.Point(71, 220);
+            this.dgv_Habitaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_Habitaciones.Name = "dgv_Habitaciones";
             this.dgv_Habitaciones.ReadOnly = true;
             this.dgv_Habitaciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_Habitaciones.RowHeadersWidth = 51;
             this.dgv_Habitaciones.RowTemplate.Height = 24;
             this.dgv_Habitaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Habitaciones.Size = new System.Drawing.Size(675, 286);
+            this.dgv_Habitaciones.Size = new System.Drawing.Size(900, 352);
             this.dgv_Habitaciones.TabIndex = 58;
             this.dgv_Habitaciones.TabStop = false;
             // 
@@ -113,10 +114,10 @@ namespace ProyectoGestionSach
             this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
             this.btn_Eliminar.ImageActive = null;
-            this.btn_Eliminar.Location = new System.Drawing.Point(698, 106);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Eliminar.Location = new System.Drawing.Point(931, 130);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(30, 32);
+            this.btn_Eliminar.Size = new System.Drawing.Size(40, 39);
             this.btn_Eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Eliminar.TabIndex = 63;
             this.btn_Eliminar.TabStop = false;
@@ -129,10 +130,10 @@ namespace ProyectoGestionSach
             this.btn_Editar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Editar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Editar.Image")));
             this.btn_Editar.ImageActive = null;
-            this.btn_Editar.Location = new System.Drawing.Point(656, 106);
-            this.btn_Editar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Editar.Location = new System.Drawing.Point(875, 130);
+            this.btn_Editar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Editar.Name = "btn_Editar";
-            this.btn_Editar.Size = new System.Drawing.Size(30, 32);
+            this.btn_Editar.Size = new System.Drawing.Size(40, 39);
             this.btn_Editar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Editar.TabIndex = 62;
             this.btn_Editar.TabStop = false;
@@ -145,10 +146,10 @@ namespace ProyectoGestionSach
             this.btn_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
             this.btn_Agregar.ImageActive = null;
-            this.btn_Agregar.Location = new System.Drawing.Point(612, 106);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Agregar.Location = new System.Drawing.Point(816, 130);
+            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(30, 32);
+            this.btn_Agregar.Size = new System.Drawing.Size(40, 39);
             this.btn_Agregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Agregar.TabIndex = 61;
             this.btn_Agregar.TabStop = false;
@@ -161,8 +162,9 @@ namespace ProyectoGestionSach
             this.bunifuCustomLabel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(772, 73);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(1029, 90);
             this.bunifuCustomLabel1.TabIndex = 64;
             this.bunifuCustomLabel1.Text = " Listado de Habitaciones";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -171,7 +173,7 @@ namespace ProyectoGestionSach
             // 
             this.tb_CedCli.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tb_CedCli.AutoRoundedCorners = true;
-            this.tb_CedCli.BorderRadius = 17;
+            this.tb_CedCli.BorderRadius = 21;
             this.tb_CedCli.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_CedCli.DefaultText = "";
             this.tb_CedCli.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -184,20 +186,21 @@ namespace ProyectoGestionSach
             this.tb_CedCli.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tb_CedCli.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_CedCli.HoverState.Parent = this.tb_CedCli;
-            this.tb_CedCli.Location = new System.Drawing.Point(152, 106);
+            this.tb_CedCli.Location = new System.Drawing.Point(203, 130);
+            this.tb_CedCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_CedCli.Name = "tb_CedCli";
             this.tb_CedCli.PasswordChar = '\0';
             this.tb_CedCli.PlaceholderText = "";
             this.tb_CedCli.SelectedText = "";
             this.tb_CedCli.ShadowDecoration.Parent = this.tb_CedCli;
-            this.tb_CedCli.Size = new System.Drawing.Size(455, 36);
+            this.tb_CedCli.Size = new System.Drawing.Size(607, 44);
             this.tb_CedCli.TabIndex = 101;
             // 
             // FrmRegistroHabitacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 492);
+            this.ClientSize = new System.Drawing.Size(1029, 606);
             this.Controls.Add(this.tb_CedCli);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.btn_Eliminar);
@@ -206,8 +209,10 @@ namespace ProyectoGestionSach
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.dgv_Habitaciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmRegistroHabitacion";
             this.Text = "FrmRegistroHabitacion";
+            this.Load += new System.EventHandler(this.FrmRegistroHabitacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Habitaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Editar)).EndInit();

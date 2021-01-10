@@ -40,6 +40,9 @@
       <HintPath>D:\Extensiones Visual Studio\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -55,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectionAPI\Connection.cs" />
     <Compile Include="Formularios\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,23 +137,19 @@
     <Compile Include="Formularios\FrmRegistroNuevoUsuario.Designer.cs">
       <DependentUpon>FrmRegistroNuevoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Fragment\ListaHabitaciones.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Formularios\Fragment\ListaHabitaciones.Designer.cs">
-      <DependentUpon>ListaHabitaciones.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\FrmRegistroNuevaReserva.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmRegistroNuevaReserva.Designer.cs">
       <DependentUpon>FrmRegistroNuevaReserva.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Alquileres.cs" />
+    <Compile Include="Models\Clientes.cs" />
+    <Compile Include="Models\Empleados.cs" />
+    <Compile Include="Models\Habitaciones.cs" />
+    <Compile Include="Models\Reservas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\Fragment\ListaHabitaciones.resx">
-      <DependentUpon>ListaHabitaciones.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmIniciar.resx">
       <DependentUpon>FrmIniciar.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +202,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -245,5 +246,6 @@
   <ItemGroup>
     <None Include="Resources\user_100px.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
