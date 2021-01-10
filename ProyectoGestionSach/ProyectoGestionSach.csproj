@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FBCE80E-DACF-479E-9AEE-16F073257001}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoGestionSach</RootNamespace>
+    <AssemblyName>ProyectoGestionSach</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Extensiones Visual Studio\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\Extensiones Visual Studio\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmSplashView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmSplashView.Designer.cs">
+      <DependentUpon>FrmSplashView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmIniciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmIniciar.Designer.cs">
+      <DependentUpon>FrmIniciar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroHabitacion.Designer.cs">
+      <DependentUpon>FrmRegistroHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroHuesped.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroHuesped.Designer.cs">
+      <DependentUpon>FrmRegistroHuesped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevoAlquiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevoAlquiler.Designer.cs">
+      <DependentUpon>FrmRegistroNuevoAlquiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevaHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevaHabitacion.Designer.cs">
+      <DependentUpon>FrmRegistroNuevaHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevoHuesped.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevoHuesped.Designer.cs">
+      <DependentUpon>FrmRegistroNuevoHuesped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Fragment\ItemHabitacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Fragment\ItemHabitacion.Designer.cs">
+      <DependentUpon>ItemHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroReservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroReservaciones.Designer.cs">
+      <DependentUpon>FrmRegistroReservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroUsuario.Designer.cs">
+      <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevoUsuario.Designer.cs">
+      <DependentUpon>FrmRegistroNuevoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Fragment\ListaHabitaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Fragment\ListaHabitaciones.Designer.cs">
+      <DependentUpon>ListaHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistroNuevaReserva.Designer.cs">
+      <DependentUpon>FrmRegistroNuevaReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Fragment\ListaHabitaciones.resx">
+      <DependentUpon>ListaHabitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmIniciar.resx">
+      <DependentUpon>FrmIniciar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmSplashView.resx">
+      <DependentUpon>FrmSplashView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroHabitacion.resx">
+      <DependentUpon>FrmRegistroHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroHuesped.resx">
+      <DependentUpon>FrmRegistroHuesped.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroNuevoAlquiler.resx">
+      <DependentUpon>FrmRegistroNuevoAlquiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroNuevaHabitacion.resx">
+      <DependentUpon>FrmRegistroNuevaHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroNuevoHuesped.resx">
+      <DependentUpon>FrmRegistroNuevoHuesped.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Fragment\ItemHabitacion.resx">
+      <DependentUpon>ItemHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroReservaciones.resx">
+      <DependentUpon>FrmRegistroReservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroUsuario.resx">
+      <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroNuevoUsuario.resx">
+      <DependentUpon>FrmRegistroNuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmRegistroNuevaReserva.resx">
+      <DependentUpon>FrmRegistroNuevaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinimizarIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestionSachLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estadisticas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reservation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alquiler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_100px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
