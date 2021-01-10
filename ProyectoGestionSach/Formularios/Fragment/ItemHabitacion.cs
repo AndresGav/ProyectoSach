@@ -16,10 +16,29 @@ namespace ProyectoGestionSach
         {
             InitializeComponent();
         }
-
+        public ItemHabitacion(string hab, string estado, string tipo)
+        {
+            InitializeComponent();
+            lbl_Estado.Text = estado;
+            lbl_TipoHab.Text = tipo;
+            btn_Hab.Text = hab;
+            colorEstado();
+        }
+        private void colorEstado()
+        {
+            if (lbl_Estado.Text == "D")
+            {
+                panel1.BackColor = Color.LightGreen;
+            }
+            else if (lbl_Estado.Text == "O")
+            {
+                panel1.BackColor = Color.Red;
+            }
+        }
         private void btn_Hab_Click(object sender, EventArgs e)
         {
-
+            FrmRegistroAlquiler alquiler = new FrmRegistroAlquiler();
+            alquiler.ShowDialog();
         }
     }
 }
