@@ -20,14 +20,15 @@ namespace ProyectoGestionSach
         public FrmRegistroHabitacion()
         {
             InitializeComponent();
+            pnlCargando.Visible = true;
         }
 
-        private async void CargarDatosHabitacion()
+        private async Task CargarDatosHabitacion(string urlFinal)
         {
             try
             {
-                string urlFinal = "/habitaciones";
-                string respuesta = await connection.GetHttp(urlFinal);
+                string respuesta = await Task.Run(() => connection.GetHttp(urlFinal));
+                pnlCargando.Visible = false;
                 List<Models.Habitaciones> list = JsonConvert.DeserializeObject<List<Models.Habitaciones>>(respuesta);
                 dgv_Habitaciones.DataSource = list;
             }
@@ -37,16 +38,15 @@ namespace ProyectoGestionSach
             }
         }
 
-
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
             FrmRegistroNuevaHabitacion obj = new FrmRegistroNuevaHabitacion();
             obj.ShowDialog();
         }
 
-        private void FrmRegistroHabitacion_Load(object sender, EventArgs e)
+        private async void FrmRegistroHabitacion_Load(object sender, EventArgs e)
         {
-            CargarDatosHabitacion();
+            await CargarDatosHabitacion("/habitaciones");
         }
     }
 }

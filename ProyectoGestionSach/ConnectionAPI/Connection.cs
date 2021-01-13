@@ -19,9 +19,8 @@ namespace ProyectoGestionSach.ConnectionAPI
             string json = JsonConvert.SerializeObject(objetc);
 
             var client = new HttpClient();
-            HttpResponseMessage response = await client.PostAsync(url + urlF, new StringContent(json, Encoding.UTF8, "application/json"));
 
-            return response;
+            return await client.PostAsync(url + urlF, new StringContent(json, Encoding.UTF8, "application/json"));
 
         }
 

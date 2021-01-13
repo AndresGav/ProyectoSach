@@ -14,13 +14,13 @@ namespace ProyectoGestionSach.Models
         public string cargo_emp { get; set; }
         public string direccion_emp { get; set; }
         public string telefono_emp { get; set; }
-        public string usuario_emp { get; set; }
+        public string usuario { get; set; }
         public string password { get; set; }
-        public int status { get; set; }
+        public bool status { get; set; }
 
         public Empleados() { }
 
-        public Empleados(string cedula_emp, string nombre_emp, string apellido_emp, string cargo_emp, string direccion_emp, string telefono_emp, string usuario_emp, string password, int status)
+        public Empleados(string cedula_emp, string nombre_emp, string apellido_emp, string cargo_emp, string direccion_emp, string telefono_emp, string usuario, string password, bool status)
         {
             this.cedula_emp = cedula_emp;
             this.nombre_emp = nombre_emp;
@@ -28,10 +28,15 @@ namespace ProyectoGestionSach.Models
             this.cargo_emp = cargo_emp;
             this.direccion_emp = direccion_emp;
             this.telefono_emp = telefono_emp;
-            this.usuario_emp = usuario_emp;
+            this.usuario = usuario;
             this.password = password;
             this.status = status;
         }
 
+        public Empleados(string usuario, string password)
+        {
+            this.usuario = usuario;
+            this.password = password;
+        }
     }
 }

@@ -15,8 +15,8 @@ namespace ProyectoGestionSach
         public FrmPrincipal()
         {
             InitializeComponent();
-
             toolTips();
+            AbrirFrm(new FrmInicio(), null);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -47,7 +47,6 @@ namespace ProyectoGestionSach
             AbrirFrm(new FrmInicio(), sender);
         }
 
-
         private Form ActivoFrm;
         public void AbrirFrm(Form frmHijo, object btnSender)
         {
@@ -64,29 +63,29 @@ namespace ProyectoGestionSach
             frmHijo.Show();
         }
 
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        private void guna2GradientButton6_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://google.com");
+        }
+
+        private void btn_Habitaciones_Click(object sender, EventArgs e)
         {
             AbrirFrm(new FrmRegistroHabitacion(), sender);
         }
 
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        private void btn_Huespedes_Click(object sender, EventArgs e)
         {
             AbrirFrm(new FrmRegistroHuesped(), sender);
         }
 
-        private void guna2GradientButton4_Click(object sender, EventArgs e)
+        private void btnReservaciones_Click(object sender, EventArgs e)
         {
             AbrirFrm(new FrmRegistroReservaciones(), sender);
         }
 
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        private void btnUsuarios_Click(object sender, EventArgs e)
         {
             AbrirFrm(new FrmRegistroUsuario(), sender);
-        }
-
-        private void guna2GradientButton6_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://google.com");
         }
     }
 }
