@@ -33,14 +33,14 @@ namespace ProyectoGestionSach
                 HttpResponseMessage respuesta = await Task.Run(() => connection.PostHTTP(iniciar, "/login"));
                 var contents = await respuesta.Content.ReadAsStringAsync();
                 dynamic json = JObject.Parse(contents);
-
+                
                 if (json.success == "true")
                 {
                     Properties.Settings.Default.Cedula = json.cedula;
                     Properties.Settings.Default.Nombre = json.name;
                     Properties.Settings.Default.Login = true;
                     Properties.Settings.Default.Save();
-                    MessageBox.Show("" + json.msg);
+                    MessageBox.Show("Bienvenido "+json.msg, "Inicio Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     FrmSplashView mv = new FrmSplashView();
                     this.Hide();
                     mv.ShowDialog();
@@ -66,6 +66,22 @@ namespace ProyectoGestionSach
         private void FrmIniciar_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (Char)(Keys.Enter))
+            {
+                txtContrasenia.Focus();
+            }
+        }
+
+        private void txtContrasenia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)(Keys.Enter))
+            {
+                btnIngresar.Focus();
+            }
         }
     }
 }

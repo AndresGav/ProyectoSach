@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using ProyectoGestionSach.ConnectionAPI;
 using ProyectoGestionSach.Formularios.Fragment;
 using ProyectoGestionSach.Models;
@@ -8,6 +9,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,12 +21,15 @@ namespace ProyectoGestionSach
         Connection connection = new Connection();
         int _dias = 0;
         double total = 0;
+        double saldo = 0;
 
         public FrmRegistroNuevaReserva()
         {
             InitializeComponent();
             cb_Temp.SelectedIndex = 1;
             lb_NombreEmp.Text = Properties.Settings.Default.Nombre;
+            dt_FRegistro.Format = DateTimePickerFormat.Custom;
+            dt_FRegistro.CustomFormat = "yyyy-MM-dd";
             dt_FIngreso.Format = DateTimePickerFormat.Custom;
             dt_FIngreso.CustomFormat = "yyyy-MM-dd";
             dt_FSalida.Format = DateTimePickerFormat.Custom;
@@ -95,7 +100,7 @@ namespace ProyectoGestionSach
 
         private void lbl_Dias_TextChanged(object sender, EventArgs e)
         {
-           // CalcularTotal();
+            //CalcularTotal();
         }
 
         private async void tb_CedCli_KeyPress(object sender, KeyPressEventArgs e)
@@ -135,9 +140,77 @@ namespace ProyectoGestionSach
 
         }
 
-        private void btn_Alquilar_Click(object sender, EventArgs e)
+        private async void btn_Alquilar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                Reservas reservar = new Reservas()
+                {
+
+                    cedula_cliR = tb_CedCli.Text,
+                    codigo_habR = tb_CodHab.Text,
+                    cedula_empR = Properties.Settings.Default.Cedula,
+                    fechaReg_res = dt_FRegistro.Text,
+                    fechaIng_res = dt_FIngreso.Text,
+                    fechaSal_res = dt_FSalida.Text,
+                    numDias_res = _dias,
+                    prcTotal_res = total,
+                    abono_res = double.Parse(tb_Abono.Text),
+                    saldo_res = saldo,
+                    estado_res = estadoReserva().ToString()
+
+                };
+
+
+                HttpResponseMessage respuesta = await Task.Run(() => connection.PostHTTP(reservar, "/reservar"));
+                var contents = await respuesta.Content.ReadAsStringAsync();
+                dynamic json = JObject.Parse(contents);
+
+                if (json.success == "true")
+                {
+                    MessageBox.Show("" + json.msg);
+                    this.Close();
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    MessageBox.Show("" + json.msg);
+                }
+
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR REGISTRO RESERVA: \n" + ex.Message);
+            }
+        }
+
+        private char estadoReserva()
         {
 
+            if (total == saldo)
+                return 'P';
+            else
+                return 'C';
+            
+        }
+
+        private void tb_Abono_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+        
+                saldo = total - double.Parse(tb_Abono.Text);
+                lbl_Saldo.Text = "Saldo: " + saldo;
+            }
+            catch
+            {
+                
+            }
+            
         }
     }
 }

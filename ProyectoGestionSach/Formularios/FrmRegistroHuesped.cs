@@ -55,5 +55,16 @@ namespace ProyectoGestionSach
             
             await CargarDatosClientes("/clientes/filter?like="+tb_CedCli.Text);
         }
+
+        private void btn_Editar_Click(object sender, EventArgs e)
+        {
+            string cedula = dgv_Huespedes.Rows[dgv_Huespedes.CurrentRow.Index].Cells[0].Value.ToString();
+
+            FrmEditarHuesped obj = new FrmEditarHuesped();
+
+            obj.cargarDatos(cedula);
+
+            obj.ShowDialog();
+        }
     }
 }

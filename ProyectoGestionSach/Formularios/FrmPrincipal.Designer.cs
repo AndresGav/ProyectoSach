@@ -230,6 +230,7 @@ namespace ProyectoGestionSach
             this.guna2GradientButton5.Size = new System.Drawing.Size(353, 80);
             this.guna2GradientButton5.TabIndex = 4;
             this.guna2GradientButton5.Text = "Reportes";
+            this.guna2GradientButton5.Click += new System.EventHandler(this.guna2GradientButton5_Click);
             // 
             // btnReservaciones
             // 

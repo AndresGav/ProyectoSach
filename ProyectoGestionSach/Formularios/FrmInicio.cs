@@ -30,7 +30,7 @@ namespace ProyectoGestionSach
         {
             try
             {
-                MessageBox.Show("Habitaciones Cargadas");
+                
                 pnlCargando.Visible = true;
                 respuesta = await Task.Run(()=> connection.GetHttp(urlFinal));
                 List<Habitaciones> list = JsonConvert.DeserializeObject<List<Habitaciones>>(respuesta);

@@ -29,7 +29,7 @@ namespace ProyectoGestionSach
                 string respuesta = await Task.Run(() => connection.GetHttp(urlFinal));
                 pnlCargando.Visible = false;
                 List<Models.Empleados> list = JsonConvert.DeserializeObject<List<Models.Empleados>>(respuesta);
-                dgv_Huespedes.DataSource = list;
+                dgv_Empleados.DataSource = list;
             }
             catch (Exception ex)
             {
@@ -46,6 +46,17 @@ namespace ProyectoGestionSach
         private async void FrmRegistroUsuario_Load(object sender, EventArgs e)
         {
             await CargarDatosUsuarios("/empleados");
+        }
+
+        private void btn_Editar_Click(object sender, EventArgs e)
+        {
+            string cedula = dgv_Empleados.Rows[dgv_Empleados.CurrentRow.Index].Cells[0].Value.ToString();
+            FrmEditarUsuario obj = new FrmEditarUsuario();
+
+            obj.cargarDatos(cedula);
+
+            obj.ShowDialog();
+
         }
     }
 }

@@ -23,7 +23,6 @@ C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documento
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmRegistroReservaciones.resources
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmRegistroUsuario.resources
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmRegistroNuevoUsuario.resources
-C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.ListaHabitaciones.resources
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmRegistroNuevaReserva.resources
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\bin\Debug\ProyectoGestionSach.exe.config
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\bin\Debug\ProyectoGestionSach.exe
@@ -52,3 +51,12 @@ C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documento
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.exe
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.pdb
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmListaHabReservas.resources
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\bin\Debug\Newtonsoft.Json.dll
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmListaHabReservas.resources
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmEditarReserva.resources
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmEditarHabitacion.resources
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmEditarHuesped.resources
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmEditarUsuario.resources
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmReportes.resources
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ESPOCH - DOCUMENTS\Quinto\C#\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmEstadisticas.resources

@@ -29,12 +29,12 @@ namespace ProyectoGestionSach
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroReservaciones));
             this.Label2 = new System.Windows.Forms.Label();
-            this.dgv_Habitaciones = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgv_Reservaciones = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btn_Eliminar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btn_Editar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btn_Agregar = new Bunifu.Framework.UI.BunifuImageButton();
@@ -43,7 +43,7 @@ namespace ProyectoGestionSach
             this.pnlCargando = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Habitaciones)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Reservaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Editar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).BeginInit();
@@ -63,54 +63,54 @@ namespace ProyectoGestionSach
             this.Label2.TabIndex = 65;
             this.Label2.Text = "Buscar:";
             // 
-            // dgv_Habitaciones
+            // dgv_Reservaciones
             // 
-            this.dgv_Habitaciones.AllowUserToAddRows = false;
-            this.dgv_Habitaciones.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgv_Habitaciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_Habitaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_Reservaciones.AllowUserToAddRows = false;
+            this.dgv_Reservaciones.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgv_Reservaciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_Reservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Habitaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Habitaciones.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dgv_Habitaciones.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgv_Habitaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_Habitaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Habitaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_Habitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Habitaciones.DataMember = "Habitaciones";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Habitaciones.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_Habitaciones.DoubleBuffered = true;
-            this.dgv_Habitaciones.EnableHeadersVisualStyles = false;
-            this.dgv_Habitaciones.GridColor = System.Drawing.Color.Black;
-            this.dgv_Habitaciones.HeaderBgColor = System.Drawing.Color.DarkGray;
-            this.dgv_Habitaciones.HeaderForeColor = System.Drawing.Color.Black;
-            this.dgv_Habitaciones.Location = new System.Drawing.Point(65, 220);
-            this.dgv_Habitaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgv_Habitaciones.Name = "dgv_Habitaciones";
-            this.dgv_Habitaciones.ReadOnly = true;
-            this.dgv_Habitaciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_Habitaciones.RowHeadersWidth = 51;
-            this.dgv_Habitaciones.RowTemplate.Height = 24;
-            this.dgv_Habitaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Habitaciones.Size = new System.Drawing.Size(900, 350);
-            this.dgv_Habitaciones.TabIndex = 64;
-            this.dgv_Habitaciones.TabStop = false;
+            this.dgv_Reservaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Reservaciones.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dgv_Reservaciones.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgv_Reservaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_Reservaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Reservaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_Reservaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Reservaciones.DataMember = "Habitaciones";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Reservaciones.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_Reservaciones.DoubleBuffered = true;
+            this.dgv_Reservaciones.EnableHeadersVisualStyles = false;
+            this.dgv_Reservaciones.GridColor = System.Drawing.Color.Black;
+            this.dgv_Reservaciones.HeaderBgColor = System.Drawing.Color.DarkGray;
+            this.dgv_Reservaciones.HeaderForeColor = System.Drawing.Color.Black;
+            this.dgv_Reservaciones.Location = new System.Drawing.Point(65, 220);
+            this.dgv_Reservaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_Reservaciones.Name = "dgv_Reservaciones";
+            this.dgv_Reservaciones.ReadOnly = true;
+            this.dgv_Reservaciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_Reservaciones.RowHeadersWidth = 51;
+            this.dgv_Reservaciones.RowTemplate.Height = 24;
+            this.dgv_Reservaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Reservaciones.Size = new System.Drawing.Size(900, 350);
+            this.dgv_Reservaciones.TabIndex = 64;
+            this.dgv_Reservaciones.TabStop = false;
             // 
             // btn_Eliminar
             // 
@@ -143,6 +143,7 @@ namespace ProyectoGestionSach
             this.btn_Editar.TabIndex = 68;
             this.btn_Editar.TabStop = false;
             this.btn_Editar.Zoom = 10;
+            this.btn_Editar.Click += new System.EventHandler(this.btn_Editar_Click);
             // 
             // btn_Agregar
             // 
@@ -192,7 +193,7 @@ namespace ProyectoGestionSach
             this.tb_CedCli.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_CedCli.HoverState.Parent = this.tb_CedCli;
             this.tb_CedCli.Location = new System.Drawing.Point(200, 120);
-            this.tb_CedCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_CedCli.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CedCli.Name = "tb_CedCli";
             this.tb_CedCli.PasswordChar = '\0';
             this.tb_CedCli.PlaceholderText = "";
@@ -244,12 +245,13 @@ namespace ProyectoGestionSach
             this.Controls.Add(this.btn_Editar);
             this.Controls.Add(this.btn_Agregar);
             this.Controls.Add(this.Label2);
-            this.Controls.Add(this.dgv_Habitaciones);
+            this.Controls.Add(this.dgv_Reservaciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmRegistroReservaciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistroReservaciones";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Habitaciones)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Reservaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Editar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).EndInit();
@@ -266,7 +268,7 @@ namespace ProyectoGestionSach
         private Bunifu.Framework.UI.BunifuImageButton btn_Editar;
         private Bunifu.Framework.UI.BunifuImageButton btn_Agregar;
         internal System.Windows.Forms.Label Label2;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgv_Habitaciones;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgv_Reservaciones;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Guna.UI2.WinForms.Guna2TextBox tb_CedCli;
         public System.Windows.Forms.Panel pnlCargando;

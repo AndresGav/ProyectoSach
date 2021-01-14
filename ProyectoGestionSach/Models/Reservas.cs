@@ -16,7 +16,7 @@ namespace ProyectoGestionSach.Models
         public string fechaIng_res { get; set; }
         public string fechaSal_res { get; set; }
         public int numDias_res { get; set; }
-        public double prdTotal_res { get; set; }
+        public double prcTotal_res { get; set; }
         public double abono_res { get; set; }
         public double saldo_res { get; set; }
         public string estado_res { get; set; }
@@ -33,7 +33,7 @@ namespace ProyectoGestionSach.Models
             this.fechaIng_res = fechaIng_res;
             this.fechaSal_res = fechaSal_res;
             this.numDias_res = numDias_res;
-            this.prdTotal_res = prdTotal_res;
+            this.prcTotal_res = prdTotal_res;
             this.abono_res = abono_res;
             this.saldo_res = saldo_res;
             this.estado_res = estado_res;

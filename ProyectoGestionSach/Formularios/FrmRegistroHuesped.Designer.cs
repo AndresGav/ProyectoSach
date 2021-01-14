@@ -35,20 +35,20 @@ namespace ProyectoGestionSach
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroHuesped));
             this.dgv_Huespedes = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Label2 = new System.Windows.Forms.Label();
-            this.btn_Eliminar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Editar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Agregar = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tb_CedCli = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlCargando = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Eliminar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_Editar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_Agregar = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Huespedes)).BeginInit();
+            this.pnlCargando.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Editar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).BeginInit();
-            this.pnlCargando.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_Huespedes
@@ -111,55 +111,6 @@ namespace ProyectoGestionSach
             this.Label2.Size = new System.Drawing.Size(120, 37);
             this.Label2.TabIndex = 65;
             this.Label2.Text = "Buscar:";
-            // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Eliminar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
-            this.btn_Eliminar.ImageActive = null;
-            this.btn_Eliminar.Location = new System.Drawing.Point(935, 120);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(40, 39);
-            this.btn_Eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Eliminar.TabIndex = 69;
-            this.btn_Eliminar.TabStop = false;
-            this.btn_Eliminar.Zoom = 10;
-            // 
-            // btn_Editar
-            // 
-            this.btn_Editar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Editar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Editar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Editar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Editar.Image")));
-            this.btn_Editar.ImageActive = null;
-            this.btn_Editar.Location = new System.Drawing.Point(875, 120);
-            this.btn_Editar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Editar.Name = "btn_Editar";
-            this.btn_Editar.Size = new System.Drawing.Size(40, 39);
-            this.btn_Editar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Editar.TabIndex = 68;
-            this.btn_Editar.TabStop = false;
-            this.btn_Editar.Zoom = 10;
-            // 
-            // btn_Agregar
-            // 
-            this.btn_Agregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Agregar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
-            this.btn_Agregar.ImageActive = null;
-            this.btn_Agregar.Location = new System.Drawing.Point(815, 120);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(40, 39);
-            this.btn_Agregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_Agregar.TabIndex = 67;
-            this.btn_Agregar.TabStop = false;
-            this.btn_Agregar.Zoom = 10;
-            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // bunifuCustomLabel1
             // 
@@ -233,6 +184,56 @@ namespace ProyectoGestionSach
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Eliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
+            this.btn_Eliminar.ImageActive = null;
+            this.btn_Eliminar.Location = new System.Drawing.Point(935, 120);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(40, 39);
+            this.btn_Eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_Eliminar.TabIndex = 69;
+            this.btn_Eliminar.TabStop = false;
+            this.btn_Eliminar.Zoom = 10;
+            // 
+            // btn_Editar
+            // 
+            this.btn_Editar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Editar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Editar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Editar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Editar.Image")));
+            this.btn_Editar.ImageActive = null;
+            this.btn_Editar.Location = new System.Drawing.Point(875, 120);
+            this.btn_Editar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Editar.Name = "btn_Editar";
+            this.btn_Editar.Size = new System.Drawing.Size(40, 39);
+            this.btn_Editar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_Editar.TabIndex = 68;
+            this.btn_Editar.TabStop = false;
+            this.btn_Editar.Zoom = 10;
+            this.btn_Editar.Click += new System.EventHandler(this.btn_Editar_Click);
+            // 
+            // btn_Agregar
+            // 
+            this.btn_Agregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Agregar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
+            this.btn_Agregar.ImageActive = null;
+            this.btn_Agregar.Location = new System.Drawing.Point(815, 120);
+            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Agregar.Name = "btn_Agregar";
+            this.btn_Agregar.Size = new System.Drawing.Size(40, 39);
+            this.btn_Agregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_Agregar.TabIndex = 67;
+            this.btn_Agregar.TabStop = false;
+            this.btn_Agregar.Zoom = 10;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
+            // 
             // FrmRegistroHuesped
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -252,12 +253,12 @@ namespace ProyectoGestionSach
             this.Text = "FrmRegistroHuesped";
             this.Load += new System.EventHandler(this.FrmRegistroHuesped_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Huespedes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Editar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).EndInit();
             this.pnlCargando.ResumeLayout(false);
             this.pnlCargando.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Editar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

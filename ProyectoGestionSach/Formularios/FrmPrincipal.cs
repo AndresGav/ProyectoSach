@@ -65,7 +65,7 @@ namespace ProyectoGestionSach
 
         private void guna2GradientButton6_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://google.com");
+            AbrirFrm(new FrmEstadisticas(), sender);
         }
 
         private void btn_Habitaciones_Click(object sender, EventArgs e)
@@ -86,6 +86,11 @@ namespace ProyectoGestionSach
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             AbrirFrm(new FrmRegistroUsuario(), sender);
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            AbrirFrm(new FrmReportes(), sender);
         }
     }
 }

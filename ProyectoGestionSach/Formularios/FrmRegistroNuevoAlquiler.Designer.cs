@@ -212,6 +212,7 @@ namespace ProyectoGestionSach
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pnlCargando);
             this.panel1.Controls.Add(this.tb_NombreClie);
             this.panel1.Controls.Add(this.tb_CedCli);
             this.panel1.Controls.Add(this.dt_FSalida);
@@ -520,10 +521,10 @@ namespace ProyectoGestionSach
             // pnlCargando
             // 
             this.pnlCargando.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlCargando.BackColor = System.Drawing.Color.Transparent;
+            this.pnlCargando.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlCargando.Controls.Add(this.label8);
             this.pnlCargando.Controls.Add(this.pictureBox1);
-            this.pnlCargando.Location = new System.Drawing.Point(400, 247);
+            this.pnlCargando.Location = new System.Drawing.Point(360, 53);
             this.pnlCargando.Name = "pnlCargando";
             this.pnlCargando.Size = new System.Drawing.Size(150, 146);
             this.pnlCargando.TabIndex = 105;
@@ -555,7 +556,6 @@ namespace ProyectoGestionSach
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 640);
-            this.Controls.Add(this.pnlCargando);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btn_CheckOut);
@@ -568,6 +568,7 @@ namespace ProyectoGestionSach
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmRegistroAlquiler";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistroAlquiler";
             this.Load += new System.EventHandler(this.FrmRegistroAlquiler_Load);
             this.panel5.ResumeLayout(false);

@@ -29,9 +29,11 @@ namespace ProyectoGestionSach
             if (guna2ProgressBar1.Value != 24)
             {
                 guna2ProgressBar1.Value++;
+                lbl_Archivos.Text = "Archivos: " + guna2ProgressBar1.Value;
             }
             else
             {
+
                 loading_timer.Stop();
 
                 FrmPrincipal mv = new FrmPrincipal();

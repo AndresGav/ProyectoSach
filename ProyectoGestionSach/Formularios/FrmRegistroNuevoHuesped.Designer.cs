@@ -343,6 +343,7 @@ namespace ProyectoGestionSach
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmRegistroNuevoHuesped";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistroNuevoHuesped";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();

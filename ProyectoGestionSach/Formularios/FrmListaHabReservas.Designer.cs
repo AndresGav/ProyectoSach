@@ -168,7 +168,7 @@ namespace ProyectoGestionSach
             // pnlCargando
             // 
             this.pnlCargando.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlCargando.BackColor = System.Drawing.Color.Transparent;
+            this.pnlCargando.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlCargando.Controls.Add(this.label1);
             this.pnlCargando.Controls.Add(this.pictureBox1);
             this.pnlCargando.Location = new System.Drawing.Point(357, 188);

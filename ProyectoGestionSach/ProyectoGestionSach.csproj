@@ -150,11 +150,48 @@
     <Compile Include="Formularios\FrmListaHabReservas.Designer.cs">
       <DependentUpon>FrmListaHabReservas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmEditarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmEditarReserva.Designer.cs">
+      <DependentUpon>FrmEditarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmEditarHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmEditarHabitacion.Designer.cs">
+      <DependentUpon>FrmEditarHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmEditarHuesped.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmEditarHuesped.Designer.cs">
+      <DependentUpon>FrmEditarHuesped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmEditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmEditarUsuario.Designer.cs">
+      <DependentUpon>FrmEditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmEstadisticas.Designer.cs">
+      <DependentUpon>FrmEstadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Alquileres.cs" />
     <Compile Include="Models\Clientes.cs" />
     <Compile Include="Models\Empleados.cs" />
     <Compile Include="Models\Habitaciones.cs" />
     <Compile Include="Models\Reservas.cs" />
+    <Compile Include="Models\VistasReservas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmIniciar.resx">
@@ -201,6 +238,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmListaHabReservas.resx">
       <DependentUpon>FrmListaHabReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEditarReserva.resx">
+      <DependentUpon>FrmEditarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEditarHabitacion.resx">
+      <DependentUpon>FrmEditarHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEditarHuesped.resx">
+      <DependentUpon>FrmEditarHuesped.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEditarUsuario.resx">
+      <DependentUpon>FrmEditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEstadisticas.resx">
+      <DependentUpon>FrmEstadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

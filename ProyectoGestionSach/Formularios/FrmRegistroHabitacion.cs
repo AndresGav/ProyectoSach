@@ -48,5 +48,16 @@ namespace ProyectoGestionSach
         {
             await CargarDatosHabitacion("/habitaciones");
         }
+
+        private void btn_Editar_Click(object sender, EventArgs e)
+        {
+            string codigo = dgv_Habitaciones.Rows[dgv_Habitaciones.CurrentRow.Index].Cells[0].Value.ToString();
+
+            FrmEditarHabitacion obj = new FrmEditarHabitacion();
+
+            obj.cargarDatos(codigo);
+
+            obj.ShowDialog();
+        }
     }
 }
