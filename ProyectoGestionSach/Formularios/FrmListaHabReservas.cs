@@ -7,31 +7,31 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoGestionSach
 {
-    public partial class FrmRegistroHuesped : Form
+    public partial class FrmListaHabReservas : Form
     {
         Connection connection = new Connection();
-
-        public FrmRegistroHuesped()
+        public FrmListaHabReservas()
         {
             InitializeComponent();
             pnlCargando.Visible = false;
+
         }
 
-        private async Task CargarDatosClientes(string urlFinal)
+        public async void CargarHabitaciones(string fingreso, string fsalida)
         {
             try
             {
                 pnlCargando.Visible = true;
+                string urlFinal = "/confim_r?fechaIng_res=" + fingreso+ "&fechaSal_res=" + fsalida;
                 string respuesta = await Task.Run(() => connection.GetHttp(urlFinal));
                 pnlCargando.Visible = false;
-                List<Models.Clientes> list = JsonConvert.DeserializeObject<List<Models.Clientes>>(respuesta);
-                dgv_Huespedes.DataSource = list;
+                List<Models.Habitaciones> list = JsonConvert.DeserializeObject<List<Models.Habitaciones>>(respuesta);
+                dgv_Habitaciones.DataSource = list;
             }
             catch (Exception ex)
             {
@@ -39,21 +39,22 @@ namespace ProyectoGestionSach
             }
         }
 
-        private void btn_Agregar_Click(object sender, EventArgs e)
-        {
-            FrmRegistroNuevoHuesped obj = new FrmRegistroNuevoHuesped();
-            obj.ShowDialog();
-        }
-
-        private async void FrmRegistroHuesped_Load(object sender, EventArgs e)
-        {
-            await CargarDatosClientes("/clientes");
-        }
-
-        private async void tb_CedCli_TextChanged(object sender, EventArgs e)
+        private void btn_AceptarHab_Click(object sender, EventArgs e)
         {
             
-            await CargarDatosClientes("/clientes/filter?like="+tb_CedCli.Text);
+            if (dgv_Habitaciones.SelectedRows.Count > 0)
+            {
+                this.DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                MessageBox.Show("SELECCIONE UNA FILA");
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

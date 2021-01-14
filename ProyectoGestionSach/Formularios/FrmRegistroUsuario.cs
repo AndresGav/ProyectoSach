@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using ProyectoGestionSach.ConnectionAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,15 +14,38 @@ namespace ProyectoGestionSach
 {
     public partial class FrmRegistroUsuario : Form
     {
+        Connection connection = new Connection();
+
         public FrmRegistroUsuario()
         {
             InitializeComponent();
+            pnlCargando.Visible = true;
+        }
+
+        private async Task CargarDatosUsuarios(string urlFinal)
+        {
+            try
+            {
+                string respuesta = await Task.Run(() => connection.GetHttp(urlFinal));
+                pnlCargando.Visible = false;
+                List<Models.Empleados> list = JsonConvert.DeserializeObject<List<Models.Empleados>>(respuesta);
+                dgv_Huespedes.DataSource = list;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR: " + ex.Message);
+            }
         }
 
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
             FrmRegistroNuevoUsuario obj = new FrmRegistroNuevoUsuario();
             obj.ShowDialog();
+        }
+
+        private async void FrmRegistroUsuario_Load(object sender, EventArgs e)
+        {
+            await CargarDatosUsuarios("/empleados");
         }
     }
 }

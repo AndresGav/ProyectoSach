@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,22 +23,23 @@ namespace ProyectoGestionSach
         public FrmInicio()
         {
             InitializeComponent();
-            CargarHabitaciones();
+            pnlCargando.Visible = false;
         }
-
-        public async void CargarHabitaciones()
+        string respuesta = "";// = await connection.GetHttp(urlFinal);
+        public async Task CargarHabitaciones(string urlFinal)
         {
             try
             {
-                string urlFinal = "/habitaciones";
-                string respuesta = await connection.GetHttp(urlFinal);
+                MessageBox.Show("Habitaciones Cargadas");
+                pnlCargando.Visible = true;
+                respuesta = await Task.Run(()=> connection.GetHttp(urlFinal));
                 List<Habitaciones> list = JsonConvert.DeserializeObject<List<Habitaciones>>(respuesta);
+                pnlCargando.Visible = false;
                 pnlContenedor.Controls.Clear();
                 foreach (Habitaciones hab in list)
                 {
                     pnlContenedor.Controls.Add(new ItemHabitacion(hab.codigo_hab, hab.estado_hab, hab.tipo_hab));
                 }
-
             }
             catch (Exception ex)
             {
@@ -45,6 +47,9 @@ namespace ProyectoGestionSach
             }
         }
 
-
+        private async void FrmInicio_Load(object sender, EventArgs e)
+        {
+            await CargarHabitaciones("/habitaciones");
+        }
     }
 }

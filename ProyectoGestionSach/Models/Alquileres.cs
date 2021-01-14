@@ -15,12 +15,14 @@ namespace ProyectoGestionSach.Models
         public string fechaIng_alq { get; set; }
         public string fechaSal_alq { get; set; }
         public int numDias_alq { get; set; }
+        public string temp_alq { get; set; }
         public double prcTotal_alq { get; set; }
         public string estado_alq { get; set; }
+        public string nombreClie { get; set; }
 
         public Alquileres() { }
 
-        public Alquileres(int id_alquiler, string cedula_cliA, string codigo_habA, string cedula_empA, string fechaIng_alq, string fechaSal_alq, int numDias_alq, double prcTotal_alq, string estado_alq)
+        public Alquileres(int id_alquiler, string cedula_cliA, string codigo_habA, string cedula_empA, string fechaIng_alq, string fechaSal_alq, int numDias_alq, string temp_alq, double prcTotal_alq, string estado_alq)
         {
             this.id_alquiler = id_alquiler;
             this.cedula_cliA = cedula_cliA;
@@ -29,8 +31,15 @@ namespace ProyectoGestionSach.Models
             this.fechaIng_alq = fechaIng_alq;
             this.fechaSal_alq = fechaSal_alq;
             this.numDias_alq = numDias_alq;
+            this.temp_alq = temp_alq;
             this.prcTotal_alq = prcTotal_alq;
             this.estado_alq = estado_alq;
+        }
+
+        public Alquileres(int id_alquiler, string codigo_habA)
+        {
+            this.id_alquiler = id_alquiler;
+            this.codigo_habA = codigo_habA;
         }
     }
 }

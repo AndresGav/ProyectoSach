@@ -40,10 +40,15 @@ namespace ProyectoGestionSach
             this.btn_Agregar = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tb_CedCli = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pnlCargando = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Habitaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Editar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).BeginInit();
+            this.pnlCargando.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Label2
@@ -51,7 +56,7 @@ namespace ProyectoGestionSach
             this.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(64, 129);
+            this.Label2.Location = new System.Drawing.Point(58, 122);
             this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(120, 37);
@@ -95,7 +100,7 @@ namespace ProyectoGestionSach
             this.dgv_Habitaciones.GridColor = System.Drawing.Color.Black;
             this.dgv_Habitaciones.HeaderBgColor = System.Drawing.Color.DarkGray;
             this.dgv_Habitaciones.HeaderForeColor = System.Drawing.Color.Black;
-            this.dgv_Habitaciones.Location = new System.Drawing.Point(71, 220);
+            this.dgv_Habitaciones.Location = new System.Drawing.Point(65, 220);
             this.dgv_Habitaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_Habitaciones.Name = "dgv_Habitaciones";
             this.dgv_Habitaciones.ReadOnly = true;
@@ -103,7 +108,7 @@ namespace ProyectoGestionSach
             this.dgv_Habitaciones.RowHeadersWidth = 51;
             this.dgv_Habitaciones.RowTemplate.Height = 24;
             this.dgv_Habitaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Habitaciones.Size = new System.Drawing.Size(900, 352);
+            this.dgv_Habitaciones.Size = new System.Drawing.Size(900, 350);
             this.dgv_Habitaciones.TabIndex = 58;
             this.dgv_Habitaciones.TabStop = false;
             // 
@@ -114,7 +119,7 @@ namespace ProyectoGestionSach
             this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.Image")));
             this.btn_Eliminar.ImageActive = null;
-            this.btn_Eliminar.Location = new System.Drawing.Point(931, 130);
+            this.btn_Eliminar.Location = new System.Drawing.Point(935, 120);
             this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(40, 39);
@@ -130,7 +135,7 @@ namespace ProyectoGestionSach
             this.btn_Editar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Editar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Editar.Image")));
             this.btn_Editar.ImageActive = null;
-            this.btn_Editar.Location = new System.Drawing.Point(875, 130);
+            this.btn_Editar.Location = new System.Drawing.Point(875, 120);
             this.btn_Editar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Editar.Name = "btn_Editar";
             this.btn_Editar.Size = new System.Drawing.Size(40, 39);
@@ -146,7 +151,7 @@ namespace ProyectoGestionSach
             this.btn_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
             this.btn_Agregar.ImageActive = null;
-            this.btn_Agregar.Location = new System.Drawing.Point(816, 130);
+            this.btn_Agregar.Location = new System.Drawing.Point(815, 120);
             this.btn_Agregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(40, 39);
@@ -164,7 +169,7 @@ namespace ProyectoGestionSach
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(1029, 90);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(1030, 90);
             this.bunifuCustomLabel1.TabIndex = 64;
             this.bunifuCustomLabel1.Text = " Listado de Habitaciones";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -186,21 +191,53 @@ namespace ProyectoGestionSach
             this.tb_CedCli.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tb_CedCli.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_CedCli.HoverState.Parent = this.tb_CedCli;
-            this.tb_CedCli.Location = new System.Drawing.Point(203, 130);
-            this.tb_CedCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_CedCli.Location = new System.Drawing.Point(200, 120);
+            this.tb_CedCli.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CedCli.Name = "tb_CedCli";
             this.tb_CedCli.PasswordChar = '\0';
             this.tb_CedCli.PlaceholderText = "";
             this.tb_CedCli.SelectedText = "";
             this.tb_CedCli.ShadowDecoration.Parent = this.tb_CedCli;
-            this.tb_CedCli.Size = new System.Drawing.Size(607, 44);
+            this.tb_CedCli.Size = new System.Drawing.Size(600, 45);
             this.tb_CedCli.TabIndex = 101;
+            // 
+            // pnlCargando
+            // 
+            this.pnlCargando.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlCargando.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlCargando.Controls.Add(this.label1);
+            this.pnlCargando.Controls.Add(this.pictureBox1);
+            this.pnlCargando.Location = new System.Drawing.Point(405, 210);
+            this.pnlCargando.Name = "pnlCargando";
+            this.pnlCargando.Size = new System.Drawing.Size(220, 176);
+            this.pnlCargando.TabIndex = 104;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(45, 143);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 23);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Cargando...";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(15, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 137);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmRegistroHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 606);
+            this.ClientSize = new System.Drawing.Size(1030, 600);
+            this.Controls.Add(this.pnlCargando);
             this.Controls.Add(this.tb_CedCli);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.btn_Eliminar);
@@ -209,7 +246,7 @@ namespace ProyectoGestionSach
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.dgv_Habitaciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmRegistroHabitacion";
             this.Text = "FrmRegistroHabitacion";
             this.Load += new System.EventHandler(this.FrmRegistroHabitacion_Load);
@@ -217,6 +254,9 @@ namespace ProyectoGestionSach
             ((System.ComponentModel.ISupportInitialize)(this.btn_Eliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Editar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Agregar)).EndInit();
+            this.pnlCargando.ResumeLayout(false);
+            this.pnlCargando.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +270,8 @@ namespace ProyectoGestionSach
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgv_Habitaciones;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Guna.UI2.WinForms.Guna2TextBox tb_CedCli;
+        public System.Windows.Forms.Panel pnlCargando;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

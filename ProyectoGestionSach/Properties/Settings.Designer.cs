@@ -25,5 +25,9 @@ namespace ProyectoGestionSach.Properties
                 return defaultInstance;
             }
         }
+
+        public string Cedula { get; internal set; }
+        public string Nombre { get; internal set; }
+        public bool Login { get; internal set; }
     }
 }

@@ -51,3 +51,4 @@ C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documento
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.csproj.CopyComplete
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.exe
 C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.pdb
+C:\Users\USUARIO\OneDrive - ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\Documentos\ProyectoSach\ProyectoGestionSach\ProyectoGestionSach\obj\Debug\ProyectoGestionSach.FrmListaHabReservas.resources
